@@ -1,0 +1,16 @@
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Cliente\bin\Cliente.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Cliente\bin\Cliente.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Cliente\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Cliente\obj\Debug\Cliente.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Cliente\obj\Debug\Cliente.pdb
+F:\biblioteca_classe\Cliente\bin\Cliente.dll
+F:\biblioteca_classe\Cliente\bin\Cliente.pdb
+F:\biblioteca_classe\Cliente\obj\Debug\ResolveAssemblyReference.cache
+F:\biblioteca_classe\Cliente\obj\Debug\Cliente.dll
+F:\biblioteca_classe\Cliente\obj\Debug\Cliente.pdb
+F:\biblioteca_classe\Cliente\bin\MySql.Data.Entity.EF6.dll
+C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Cliente\bin\Cliente.dll
+C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Cliente\bin\Cliente.pdb
+C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Cliente\obj\Debug\Cliente.csprojResolveAssemblyReference.cache
+C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Cliente\obj\Debug\Cliente.dll
+C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Cliente\obj\Debug\Cliente.pdb

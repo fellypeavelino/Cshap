@@ -1,0 +1,6 @@
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\bin\Debug\Biblioteca_Classe.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\bin\Debug\Biblioteca_Classe.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\obj\Debug\Biblioteca_Classe.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Biblioteca_Classe\obj\Debug\Biblioteca_Classe.pdb
