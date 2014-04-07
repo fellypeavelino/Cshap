@@ -1,11 +1,8 @@
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\bin\Debug\Frigorifico.exe
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\bin\Debug\Frigorifico.pdb
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\bin\Debug\MySql.Data.Entity.EF6.dll
-C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Form1.resources
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Properties.Resources.resources
-C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.exe
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.pdb
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Desktop.resources
@@ -52,3 +49,6 @@ C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigor
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Form1.resources
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Properties.Resources.resources
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csproj.GenerateResource.Cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csprojResolveAssemblyReference.cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Cadastro_Animal.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csproj.GenerateResource.Cache

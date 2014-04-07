@@ -23,3 +23,16 @@ C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cl
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.exe
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.pdb
 C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Cadastro_Compra.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\bin\Debug\Web_Cliente.exe.config
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.exe
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\bin\Debug\Web_Cliente.exe
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\bin\Debug\Web_Cliente.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.csprojResolveAssemblyReference.cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Cadastro_Compra.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Form1.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Login.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Visualizacao_Produto.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Properties.Resources.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.csproj.GenerateResource.Cache

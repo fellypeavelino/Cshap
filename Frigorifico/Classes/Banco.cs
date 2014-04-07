@@ -30,7 +30,7 @@ namespace Frigorifico.Classes
             //"Data Source=MRIADOCARMO-PC\\SQLEXPRESS1;Initial Catalog=frigorifico2;User id=felipe2;Password=nirvana"
             //"Data Source=S1-C2-08;Initial Catalog=frigorifico2;User id=felipe;Password=nirvana"
 
-            SqlConnection sql = new SqlConnection("Data Source=S1-A9-10;Initial Catalog=frigorifico2;User id=felipe2;Password=nirvana");
+            SqlConnection sql = new SqlConnection("Data Source=MRIADOCARMO-PC\\SQLEXPRESS1;Initial Catalog=frigorifico2;User id=felipe2;Password=nirvana");
             
             return sql;
         }
