@@ -56,9 +56,12 @@ namespace Web_Cliente.Layout
                 this.produtos.Add(produto);
                 Item_Pedido ip = new Item_Pedido();
                 ip.qantidade = int.Parse(quantidade.Text);
+                Pessoa p = new Pessoa();
+                p.mail = nome_usuario.Text;
+                ip.Codigo_pessoa = ip.idPessoa(p);
                 ip.insert(produto, ip);
                 int id = ip.idItemPedido(produto, ip);
-                MessageBox.Show(""+id);
+                MessageBox.Show("" + id);
             }catch(Exception ex){
                 MessageBox.Show(ex.Message);
             }
