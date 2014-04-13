@@ -80,8 +80,8 @@
       <Path>
         <Point X="6.75" Y="7.528" />
         <Point X="6.862" Y="7.559" />
-        <Point X="7.875" Y="7.559" />
-        <Point X="7.875" Y="9.75" />
+        <Point X="8.875" Y="7.559" />
+        <Point X="8.875" Y="9.5" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -94,7 +94,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Frigorifico.Classes.Solicitacao">
-    <Position X="8" Y="6.5" Width="1.5" />
+    <Position X="9.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAQAAAgAAAAABAACAAEAAAAAAAAA=</HashCode>
       <FileName>Classes\Solicitacao.cs</FileName>
@@ -104,7 +104,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Frigorifico.Classes.Compra">
-    <Position X="7" Y="9.75" Width="1.5" />
+    <Position X="8" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAACAAAAEAABAAAA=</HashCode>
       <FileName>Classes\Compra.cs</FileName>
@@ -114,9 +114,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Frigorifico.Classes.Item_Pedido">
-    <Position X="9.25" Y="8.75" Width="1.5" />
+    <Position X="10.5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAE=</HashCode>
+      <HashCode>AAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAE=</HashCode>
       <FileName>Classes\Item_Pedido.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -126,7 +126,7 @@
   <Class Name="Frigorifico.Classes.Produto">
     <Position X="13.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAEAAAAAAAAAAAAAIAAAAAAAAAAQCAAAAAAEAAAA=</HashCode>
+      <HashCode>AgAAAkCAAABAAABAAAAIAAAAAAAAAAQCAAAAAAEAAAA=</HashCode>
       <FileName>Classes\Produto.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

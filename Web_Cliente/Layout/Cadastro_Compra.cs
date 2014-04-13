@@ -43,6 +43,27 @@ namespace Web_Cliente.Layout
             }
         }
 
+        List<Produto> produtos = new List<Produto>();
+
+        private void gridProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                Produto produto = new Produto();
+                produto.Codigo_produto_ = int.Parse(gridProdutos.CurrentRow.Cells[0].Value.ToString());
+                produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
+                produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
+                this.produtos.Add(produto);
+                Item_Pedido ip = new Item_Pedido();
+                ip.qantidade = int.Parse(quantidade.Text);
+                ip.insert(produto, ip);
+                int id = ip.idItemPedido(produto, ip);
+                MessageBox.Show(""+id);
+            }catch(Exception ex){
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
     }
 }

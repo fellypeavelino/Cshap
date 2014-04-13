@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.quantidade = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +66,7 @@
             this.gridProdutos.Name = "gridProdutos";
             this.gridProdutos.Size = new System.Drawing.Size(466, 295);
             this.gridProdutos.TabIndex = 2;
+            this.gridProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProdutos_CellContentClick);
             // 
             // label2
             // 
@@ -90,11 +93,29 @@
             this.textBox1.Size = new System.Drawing.Size(258, 20);
             this.textBox1.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Quantidade:";
+            // 
+            // quantidade
+            // 
+            this.quantidade.Location = new System.Drawing.Point(83, 72);
+            this.quantidade.Name = "quantidade";
+            this.quantidade.Size = new System.Drawing.Size(100, 20);
+            this.quantidade.TabIndex = 7;
+            // 
             // Cadastro_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 459);
+            this.Controls.Add(this.quantidade);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -118,5 +139,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox quantidade;
     }
 }
