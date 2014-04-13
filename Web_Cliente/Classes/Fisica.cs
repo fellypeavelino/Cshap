@@ -44,7 +44,7 @@ namespace Frigorifico.Classes
             Commando.ExecuteNonQuery();
             Connection.Close();
         }
-        /*
+
         public SqlDataReader dadoslistados2(DataGridView dgv)
         {
             Banco b = new Banco();
@@ -57,7 +57,7 @@ namespace Frigorifico.Classes
             SqlDataReader read = comand.ExecuteReader();
             return read;
         }
-        */
+
         public Boolean verifica_duplicata2(Fisica f)
         {
             Banco banco = new Banco();

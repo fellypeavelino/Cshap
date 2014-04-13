@@ -28,7 +28,7 @@ namespace Frigorifico.Classes
             //connection.Close();
             return read;
         }
-        /*
+
         public int id_fornecedor(ComboBox fornecedor) {
             Banco b = new Banco();
             SqlConnection connection = b.con2();
@@ -43,7 +43,7 @@ namespace Frigorifico.Classes
             connection.Close();
             return id;
         }
-        */
+
         public void insert(Animal animal) {
             Banco b = new Banco();
             SqlConnection connection = b.con2();

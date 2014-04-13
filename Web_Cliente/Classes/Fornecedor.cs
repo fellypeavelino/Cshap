@@ -53,7 +53,7 @@ namespace Frigorifico.Classes
             Connection.Close();
             return conta;
         }
-        /*
+
         public SqlDataReader dadoslistados2(DataGridView dgv)
         {
             Banco b = new Banco();
@@ -66,6 +66,5 @@ namespace Frigorifico.Classes
             SqlDataReader read = comand.ExecuteReader();
             return read;
         }
-        */
     }
 }

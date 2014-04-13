@@ -56,5 +56,14 @@ namespace Cliente
             return nomes;
         }
 
+
+        [WebMethod]
+        public List<Produto> listaProdutoWeb()
+        {
+            Produto produto = new Produto();
+            List<Produto> p = produto.lista();
+            return p;
+        }
+
     }
 }

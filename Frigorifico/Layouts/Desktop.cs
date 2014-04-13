@@ -50,5 +50,11 @@ namespace Frigorifico.Layouts
             Cadastro_Animal caan = new Cadastro_Animal();
             caan.Show();
         }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro_Poduto cadPro = new Cadastro_Poduto();
+            cadPro.Show();
+        }
     }
 }

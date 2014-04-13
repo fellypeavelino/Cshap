@@ -5,12 +5,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <script language=javascript>
+        window.location = "http://localhost:52803/WebServiceFrigorifico.asmx";
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <a href="http://localhost:52803/WebServiceFrigorifico.asmx">
+            aqui
+        </a>
     </div>
     </form>
 </body>
+
 </html>

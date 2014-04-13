@@ -52,3 +52,4 @@ C:\Users\aluno.EXPERT\Desktop\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigor
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csprojResolveAssemblyReference.cache
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Cadastro_Animal.resources
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csproj.GenerateResource.Cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Cadastro_Poduto.resources
