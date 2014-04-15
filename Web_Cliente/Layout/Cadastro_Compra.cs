@@ -54,6 +54,7 @@ namespace Web_Cliente.Layout
                 produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
                 produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
                 this.produtos.Add(produto);
+                ////acumulando objeto
                 Item_Pedido ip = new Item_Pedido();
                 ip.qantidade = int.Parse(quantidade.Text);
                 Pessoa p = new Pessoa();
@@ -62,9 +63,16 @@ namespace Web_Cliente.Layout
                 ip.insert(produto, ip);
                 int id = ip.idItemPedido(produto, ip);
                 MessageBox.Show("" + id);
+                //
             }catch(Exception ex){
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Solicitacao_Descricao sd = new Solicitacao_Descricao();
+            sd.Show();
         }
 
 
