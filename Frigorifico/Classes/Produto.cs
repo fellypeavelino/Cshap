@@ -21,10 +21,10 @@ namespace Frigorifico.Classes
 
         public Solicitacao Solicitacao
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            //get
+            //{
+                //throw new System.NotImplementedException();
+            //}
             set
             {
             }

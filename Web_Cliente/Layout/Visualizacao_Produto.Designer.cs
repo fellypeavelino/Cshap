@@ -30,11 +30,11 @@
         {
             this.nome = new System.Windows.Forms.Label();
             this.nome_vsualizar = new System.Windows.Forms.MaskedTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridProdutos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.Pesquisar = new System.Windows.Forms.Button();
             this.tipo_visualizar = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
             this.SuspendLayout();
             // 
             // nome
@@ -53,13 +53,13 @@
             this.nome_vsualizar.Size = new System.Drawing.Size(186, 20);
             this.nome_vsualizar.TabIndex = 1;
             // 
-            // dataGridView1
+            // gridProdutos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(612, 332);
-            this.dataGridView1.TabIndex = 2;
+            this.gridProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProdutos.Location = new System.Drawing.Point(12, 141);
+            this.gridProdutos.Name = "gridProdutos";
+            this.gridProdutos.Size = new System.Drawing.Size(612, 332);
+            this.gridProdutos.TabIndex = 2;
             // 
             // label2
             // 
@@ -72,12 +72,13 @@
             // 
             // Pesquisar
             // 
-            this.Pesquisar.Location = new System.Drawing.Point(12, 112);
+            this.Pesquisar.Location = new System.Drawing.Point(12, 82);
             this.Pesquisar.Name = "Pesquisar";
             this.Pesquisar.Size = new System.Drawing.Size(75, 23);
             this.Pesquisar.TabIndex = 4;
             this.Pesquisar.Text = "Pesquisar";
             this.Pesquisar.UseVisualStyleBackColor = true;
+            this.Pesquisar.Click += new System.EventHandler(this.Pesquisar_Click);
             // 
             // tipo_visualizar
             // 
@@ -95,14 +96,14 @@
             this.Controls.Add(this.tipo_visualizar);
             this.Controls.Add(this.Pesquisar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridProdutos);
             this.Controls.Add(this.nome_vsualizar);
             this.Controls.Add(this.nome);
             this.MaximizeBox = false;
             this.Name = "Visualizacao_Produto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visualização de Produto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +113,7 @@
 
         private System.Windows.Forms.Label nome;
         private System.Windows.Forms.MaskedTextBox nome_vsualizar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridProdutos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Pesquisar;
         private System.Windows.Forms.ComboBox tipo_visualizar;

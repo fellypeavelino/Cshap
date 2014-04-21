@@ -67,12 +67,9 @@
   <Class Name="Frigorifico.Classes.Tipo">
     <Position X="8.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AwAEAAAAAABBAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAA=</HashCode>
+      <HashCode>AwAEAAAAAABBAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Tipo.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Animal" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Frigorifico.Classes.Cliente">
     <Position X="5.25" Y="7.25" Width="1.5" />

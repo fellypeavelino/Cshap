@@ -11,16 +11,16 @@ namespace Frigorifico.Classes
         public int codigo_tipo;
         public String nome;
 
-        public Animal Animal
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        //public Animal Animal
+        //{
+            //get
+            //{
+               // throw new System.NotImplementedException();
+            //}
+            //set
+            //{
+            //}
+        //}
 
         public void insert(Animal animal) {
             Banco b = new Banco();

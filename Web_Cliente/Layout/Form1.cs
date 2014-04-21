@@ -61,6 +61,11 @@ namespace Web_Cliente.Layout
             ccompra.Show();
         }
 
+        private void solicitaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
