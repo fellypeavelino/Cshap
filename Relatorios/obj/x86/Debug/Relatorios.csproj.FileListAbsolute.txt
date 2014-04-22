@@ -1,0 +1,9 @@
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\bin\Debug\Relatorios.exe.config
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\bin\Debug\Relatorios.exe
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\bin\Debug\Relatorios.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.Form1.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.Properties.Resources.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.RelatorioCompras.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.csproj.GenerateResource.Cache
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.exe
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Relatorios\obj\x86\Debug\Relatorios.pdb

@@ -15,5 +15,11 @@ namespace Relatorios
         {
             InitializeComponent();
         }
+
+        private void relatorioComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioCompras rc = new RelatorioCompras();
+            rc.Show();
+        }
     }
 }
