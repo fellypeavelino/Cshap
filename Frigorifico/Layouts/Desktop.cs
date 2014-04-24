@@ -56,5 +56,11 @@ namespace Frigorifico.Layouts
             Cadastro_Poduto cadPro = new Cadastro_Poduto();
             cadPro.Show();
         }
+
+        private void cotaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lancamento_Cotação lc = new Lancamento_Cotação();
+            lc.Show();
+        }
     }
 }

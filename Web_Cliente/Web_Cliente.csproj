@@ -93,6 +93,12 @@
     <Compile Include="Layout\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layout\Lancamento_cotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\Lancamento_cotacao.Designer.cs">
+      <DependentUpon>Lancamento_cotacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layout\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\Lancamento_cotacao.resx">
+      <DependentUpon>Lancamento_cotacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
