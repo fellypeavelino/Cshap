@@ -37,3 +37,4 @@ C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\De
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Properties.Resources.resources
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.csproj.GenerateResource.Cache
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Solicitacao_Descricao.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Web_Cliente\obj\x86\Debug\Web_Cliente.Layout.Lancamento_cotacao.resources

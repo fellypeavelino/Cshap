@@ -39,6 +39,7 @@
             this.senha = new System.Windows.Forms.MaskedTextBox();
             this.groupBox_lgin = new System.Windows.Forms.GroupBox();
             this.erro = new System.Windows.Forms.Label();
+            this.cotaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.groupBox_lgin.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,8 @@
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.compraToolStripMenuItem,
             this.solicitaçãoToolStripMenuItem,
-            this.visualizaçãoDeProdutosToolStripMenuItem});
+            this.visualizaçãoDeProdutosToolStripMenuItem,
+            this.cotaçãoToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(550, 24);
@@ -145,6 +147,13 @@
             this.erro.Size = new System.Drawing.Size(0, 13);
             this.erro.TabIndex = 6;
             // 
+            // cotaçãoToolStripMenuItem
+            // 
+            this.cotaçãoToolStripMenuItem.Name = "cotaçãoToolStripMenuItem";
+            this.cotaçãoToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.cotaçãoToolStripMenuItem.Text = "Cotação";
+            this.cotaçãoToolStripMenuItem.Click += new System.EventHandler(this.cotaçãoToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +191,6 @@
         private System.Windows.Forms.MaskedTextBox senha;
         private System.Windows.Forms.GroupBox groupBox_lgin;
         private System.Windows.Forms.Label erro;
+        private System.Windows.Forms.ToolStripMenuItem cotaçãoToolStripMenuItem;
     }
 }

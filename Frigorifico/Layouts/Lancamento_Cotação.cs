@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Threading;
 using System.Net;
+using Frigorifico.Classes;
 
 namespace Frigorifico.Layouts
 {
@@ -23,6 +24,23 @@ namespace Frigorifico.Layouts
         public Lancamento_Cotação()
         {
             InitializeComponent();
+            this.carregagrid(gridProdutos);
+        }
+
+        private void carregagrid(DataGridView grid) {
+            Produto produto = new Produto();
+            List<Produto> p = produto.lista();
+            grid.Rows.Clear();
+            grid.ColumnCount = 4;
+            foreach (Produto pro in p)
+            {
+                grid.Rows.Add(
+                    pro.Codigo_produto_,
+                    pro.nome_produto,
+                    pro.peso,
+                    pro.preco
+                );
+            }
         }
 
         public bool connection()
@@ -112,7 +130,7 @@ namespace Frigorifico.Layouts
                 if (bular == true || podeescrever() == true)
                 {
                     ///mudar
-                    rtbConversa.Text += "eu " + text + "\n";
+                    rtbMensagem.Text += "eu " + text + "\n";
                 }
             }
         }
@@ -130,7 +148,7 @@ namespace Frigorifico.Layouts
             {
                 if (podeescrever() == true)
                 {
-                    rtbConversa.Text += "cliente " + text + "\n";
+                    rtbMensagem.Text += "cliente " + text + "\n";
                 }
             }
         }
@@ -198,7 +216,7 @@ namespace Frigorifico.Layouts
         {
             if (e.KeyCode == Keys.Enter)
             {
-                string mesagem = rtbConversa.Text;
+                string mesagem = rtbMensagem.Text;
                 enviarmsg(mesagem);
                 setMsg(mesagem, false);
             }
@@ -208,8 +226,26 @@ namespace Frigorifico.Layouts
         {
             if (e.KeyCode == Keys.Enter)
             {
-                rtbConversa.Clear();
+                rtbMensagem.Clear();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string mesagem = rtbMensagem.Text;
+            enviarmsg(mesagem);
+            setMsg(mesagem, false);
+        }
+
+        private void gridProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Produto produto = new Produto();
+            produto.Codigo_produto_ = int.Parse(gridProdutos.CurrentRow.Cells[0].Value.ToString());
+            produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
+            produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
+            String literal;
+            literal = produto.Codigo_produto_ + "/" + produto.nome_produto + "/" + produto.preco;
+            rtbMensagem.Text += "\n"+literal;
         }
 
 

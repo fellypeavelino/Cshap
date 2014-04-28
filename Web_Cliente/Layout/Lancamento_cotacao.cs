@@ -74,6 +74,7 @@ namespace Web_Cliente.Layout
             }
             else
             {
+                String[] array = mensagem.Split('/');
                 rtbconversa.Text = "Servidor: " + mensagem + "\n";
             }
         }
