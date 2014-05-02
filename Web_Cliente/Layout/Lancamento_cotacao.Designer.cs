@@ -42,7 +42,7 @@
             // 
             // rtbmensagem
             // 
-            this.rtbmensagem.Location = new System.Drawing.Point(61, 251);
+            this.rtbmensagem.Location = new System.Drawing.Point(51, 197);
             this.rtbmensagem.Name = "rtbmensagem";
             this.rtbmensagem.Size = new System.Drawing.Size(373, 96);
             this.rtbmensagem.TabIndex = 1;

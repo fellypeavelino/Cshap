@@ -246,6 +246,12 @@ namespace Frigorifico.Layouts
             String literal;
             literal = produto.Codigo_produto_ + "/" + produto.nome_produto + "/" + produto.preco;
             rtbMensagem.Text += "\n"+literal;
+            ListViewItem item = new ListViewItem(new[] { 
+                produto.Codigo_produto_.ToString(), 
+                produto.nome_produto, 
+                produto.preco.ToString()
+            });
+            listView.Items.Add(item);
         }
 
 

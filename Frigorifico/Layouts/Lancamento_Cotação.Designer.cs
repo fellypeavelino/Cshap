@@ -31,6 +31,7 @@
             this.gridProdutos = new System.Windows.Forms.DataGridView();
             this.rtbMensagem = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.listView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             // 
             this.rtbMensagem.Location = new System.Drawing.Point(12, 22);
             this.rtbMensagem.Name = "rtbMensagem";
-            this.rtbMensagem.Size = new System.Drawing.Size(450, 96);
+            this.rtbMensagem.Size = new System.Drawing.Size(367, 96);
             this.rtbMensagem.TabIndex = 1;
             this.rtbMensagem.Text = "";
             // 
@@ -61,11 +62,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // listView
+            // 
+            this.listView.Location = new System.Drawing.Point(464, 21);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(272, 97);
+            this.listView.TabIndex = 4;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            // 
             // Lancamento_Cotação
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 438);
+            this.ClientSize = new System.Drawing.Size(748, 438);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rtbMensagem);
             this.Controls.Add(this.gridProdutos);
@@ -84,5 +94,6 @@
         private System.Windows.Forms.DataGridView gridProdutos;
         private System.Windows.Forms.RichTextBox rtbMensagem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView listView;
     }
 }
