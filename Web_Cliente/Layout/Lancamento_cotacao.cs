@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Threading;
+using Web_Cliente.servidor;
 
 namespace Web_Cliente.Layout
 {
@@ -24,9 +25,15 @@ namespace Web_Cliente.Layout
 
         private void connect()
         {
-            tcpclient = new TcpClient();
-            setMsg("establecido a conexão....");
-            tcpclient.Connect("127.0.0.1", 8000);
+            try
+            {
+                tcpclient = new TcpClient();
+                setMsg("establecido a conexão....");
+                tcpclient.Connect("127.0.0.1", 8000);
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Servidor não conectado");            
+            }
         }
 
         private void desconnect()
@@ -74,8 +81,24 @@ namespace Web_Cliente.Layout
             }
             else
             {
-                String[] array = mensagem.Split('/');
+                String[] array = mensagem.Split('-');
+                //MessageBox.Show(array.Length+"");
                 rtbconversa.Text = "Servidor: " + mensagem + "\n";
+                String[] filtro1;
+                Produto produtos = new Produto();
+                lProdutoServidor.ColumnCount = 4;
+                for (int i = 1; i < array.Length; i++ )
+                {
+                    filtro1 = array[i].Split('/');
+                    produtos.Codigo_produto_ = int.Parse(filtro1[0]);
+                    produtos.nome_produto = filtro1[1];
+                    produtos.preco = float.Parse(filtro1[2]);
+                    lProdutoServidor.Rows.Add(
+                        produtos.Codigo_produto_,
+                        produtos.nome_produto,
+                        produtos.preco
+                    );
+                }
             }
         }
 

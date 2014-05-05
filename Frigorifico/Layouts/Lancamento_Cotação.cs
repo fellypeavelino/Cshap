@@ -157,7 +157,7 @@ namespace Frigorifico.Layouts
         {
             if (connection())
             {
-                setMsg("aquardand uma conexão...", true);
+                setMsg("aquardando uma conexão...", true);
                 thinteraction = new Thread(new ThreadStart(interation));
                 thinteraction.IsBackground = true;
                 thinteraction.Priority = ThreadPriority.Highest;
@@ -173,6 +173,7 @@ namespace Frigorifico.Layouts
             {
                 acceptconnection();
                 setMsg("conexão aceita...", true);
+                
                 do
                 {
                     networkstream = tcpclient.GetStream();
@@ -232,7 +233,7 @@ namespace Frigorifico.Layouts
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string mesagem = rtbMensagem.Text;
+            string mesagem = rtEnviar.Text;
             enviarmsg(mesagem);
             setMsg(mesagem, false);
         }
@@ -244,14 +245,16 @@ namespace Frigorifico.Layouts
             produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
             produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
             String literal;
-            literal = produto.Codigo_produto_ + "/" + produto.nome_produto + "/" + produto.preco;
-            rtbMensagem.Text += "\n"+literal;
-            ListViewItem item = new ListViewItem(new[] { 
-                produto.Codigo_produto_.ToString(), 
-                produto.nome_produto, 
-                produto.preco.ToString()
-            });
-            listView.Items.Add(item);
+            literal = "-"+produto.Codigo_produto_ + "/" + produto.nome_produto + "/" + produto.preco;
+            rtEnviar.Text += "\n"+literal;
+
+            produtoselecionado.ColumnCount = 4;
+            produtoselecionado.Rows.Add(
+                    produto.Codigo_produto_,
+                    produto.nome_produto,
+                    produto.preco
+                );
+            
         }
 
 
