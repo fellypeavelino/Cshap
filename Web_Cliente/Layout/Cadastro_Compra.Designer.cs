@@ -38,7 +38,10 @@
             this.quantidade = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.compraTipo = new System.Windows.Forms.ComboBox();
+            this.carrinho = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carrinho)).BeginInit();
             this.SuspendLayout();
             // 
             // nome_usuario
@@ -66,7 +69,7 @@
             this.gridProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridProdutos.Location = new System.Drawing.Point(12, 152);
             this.gridProdutos.Name = "gridProdutos";
-            this.gridProdutos.Size = new System.Drawing.Size(466, 295);
+            this.gridProdutos.Size = new System.Drawing.Size(446, 295);
             this.gridProdutos.TabIndex = 2;
             this.gridProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProdutos_CellContentClick);
             // 
@@ -119,6 +122,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Compra";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -130,11 +134,29 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // compraTipo
+            // 
+            this.compraTipo.FormattingEnabled = true;
+            this.compraTipo.Location = new System.Drawing.Point(387, 35);
+            this.compraTipo.Name = "compraTipo";
+            this.compraTipo.Size = new System.Drawing.Size(71, 21);
+            this.compraTipo.TabIndex = 10;
+            // 
+            // carrinho
+            // 
+            this.carrinho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.carrinho.Location = new System.Drawing.Point(476, 9);
+            this.carrinho.Name = "carrinho";
+            this.carrinho.Size = new System.Drawing.Size(240, 150);
+            this.carrinho.TabIndex = 11;
+            // 
             // Cadastro_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 459);
+            this.ClientSize = new System.Drawing.Size(728, 459);
+            this.Controls.Add(this.carrinho);
+            this.Controls.Add(this.compraTipo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.quantidade);
@@ -149,6 +171,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compra";
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carrinho)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +189,7 @@
         private System.Windows.Forms.MaskedTextBox quantidade;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox compraTipo;
+        private System.Windows.Forms.DataGridView carrinho;
     }
 }

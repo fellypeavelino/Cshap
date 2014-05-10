@@ -20,6 +20,13 @@ namespace Web_Cliente.Layout
             {
                 nome_usuario.Text = frm1.login;
                 this.carregagrid(gridProdutos);
+                Animal animal = new Animal();
+                List<Tipo> tipo = animal.tipo.lista_nome_tipo();
+                foreach (Tipo nome in tipo)
+                {
+                    compraTipo.Items.Add(nome.nome);
+                }
+                compraTipo.SelectedIndex = 0;
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -53,16 +60,22 @@ namespace Web_Cliente.Layout
                 produto.Codigo_produto_ = int.Parse(gridProdutos.CurrentRow.Cells[0].Value.ToString());
                 produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
                 produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
+                carrinho.ColumnCount = 3;
+                carrinho.Rows.Add(
+                    produto.Codigo_produto_,
+                    produto.nome_produto,
+                    produto.preco
+                );
                 this.produtos.Add(produto);
                 ////acumulando objeto
-                Item_Pedido ip = new Item_Pedido();
-                ip.qantidade = int.Parse(quantidade.Text);
-                Pessoa p = new Pessoa();
-                p.mail = nome_usuario.Text;
-                ip.Codigo_pessoa = ip.idPessoa(p);
-                ip.insert(produto, ip);
-                int id = ip.idItemPedido(produto, ip);
-                MessageBox.Show("" + id);
+                //Item_Pedido ip = new Item_Pedido();
+                //ip.qantidade = int.Parse(quantidade.Text);
+                //Pessoa p = new Pessoa();
+                //p.mail = nome_usuario.Text;
+                //ip.Codigo_pessoa = ip.idPessoa(p);
+                //ip.insert(produto, ip);
+                //int id = ip.idItemPedido(produto, ip);
+                //MessageBox.Show("" + id);
                 //
             }catch(Exception ex){
                 MessageBox.Show(ex.Message);
@@ -73,6 +86,21 @@ namespace Web_Cliente.Layout
         {
             Solicitacao_Descricao sd = new Solicitacao_Descricao();
             sd.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Item_Pedido ip = new Item_Pedido();
+            ip.qantidade = carrinho.RowCount;
+            Pessoa p = new Pessoa();
+            p.mail = nome_usuario.Text;
+            ip.Codigo_pessoa = ip.idPessoa(p);
+            //MessageBox.Show(ip.Codigo_pessoa+"");
+            List<Produto> produtos = this.produtos;
+            foreach(Produto pr in produtos){
+                MessageBox.Show(pr.Codigo_produto_+"");
+                ip.insertCompra(pr,ip);
+            }
         }
 
 

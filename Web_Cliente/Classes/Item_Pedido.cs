@@ -71,7 +71,16 @@ namespace Frigorifico.Classes
             return id;
         }
 
-
-
+        public void insertCompra(Produto p, Item_Pedido ip)
+        {
+            Banco b = new Banco();
+            SqlConnection connection = b.con2();
+            String sql = "insert into itens_compra (quantidade, valor_unidade, id_produto, codigo_pessoa, data) values ";
+            sql += "(" + ip.qantidade + ", " + p.preco + ", " + p.Codigo_produto_ + ", " + ip.codigo_pessoa + ", GETDATE())";
+            SqlCommand command = new SqlCommand(sql, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }
