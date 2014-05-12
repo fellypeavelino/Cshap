@@ -63,7 +63,8 @@ namespace Web_Cliente.Layout
 
         private void solicitaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Solicitacao_Descricao sd = new Solicitacao_Descricao(this);
+            sd.Show();
         }
 
         private void cotaçãoToolStripMenuItem_Click(object sender, EventArgs e)

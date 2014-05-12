@@ -45,6 +45,11 @@
             this.dataGridView_ani = new System.Windows.Forms.DataGridView();
             this.recebimento_ani = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ani)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,6 +153,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -170,6 +176,12 @@
             // dataGridView_ani
             // 
             this.dataGridView_ani.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_ani.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
             this.dataGridView_ani.Location = new System.Drawing.Point(18, 258);
             this.dataGridView_ani.Name = "dataGridView_ani";
             this.dataGridView_ani.Size = new System.Drawing.Size(377, 227);
@@ -190,6 +202,31 @@
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Recebimento:";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tipo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Peso";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Preço";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Quantidade";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Fornecedor";
+            this.Column5.Name = "Column5";
             // 
             // Cadastro_Animal
             // 
@@ -242,5 +279,10 @@
         private System.Windows.Forms.DataGridView dataGridView_ani;
         private System.Windows.Forms.DateTimePicker recebimento_ani;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

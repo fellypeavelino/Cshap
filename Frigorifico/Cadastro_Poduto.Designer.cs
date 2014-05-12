@@ -39,15 +39,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.animal = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridProduto)).BeginInit();
             this.SuspendLayout();
             // 
             // gridProduto
             // 
             this.gridProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProduto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
             this.gridProduto.Location = new System.Drawing.Point(12, 271);
             this.gridProduto.Name = "gridProduto";
-            this.gridProduto.Size = new System.Drawing.Size(482, 206);
+            this.gridProduto.Size = new System.Drawing.Size(444, 206);
             this.gridProduto.TabIndex = 0;
             // 
             // label1
@@ -134,6 +143,26 @@
             this.button2.Text = "Alaterar";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nome";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Peso";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Preco";
+            this.Column4.Name = "Column4";
+            // 
             // Cadastro_Poduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +201,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox animal;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

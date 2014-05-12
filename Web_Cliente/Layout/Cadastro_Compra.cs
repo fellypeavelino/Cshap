@@ -32,6 +32,8 @@ namespace Web_Cliente.Layout
                 MessageBox.Show(ex.Message);
             }
         }
+        
+        
 
         public void carregagrid(DataGridView grid)
         {
@@ -82,24 +84,34 @@ namespace Web_Cliente.Layout
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Solicitacao_Descricao sd = new Solicitacao_Descricao();
-            sd.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Item_Pedido ip = new Item_Pedido();
-            ip.qantidade = carrinho.RowCount;
-            Pessoa p = new Pessoa();
-            p.mail = nome_usuario.Text;
-            ip.Codigo_pessoa = ip.idPessoa(p);
-            //MessageBox.Show(ip.Codigo_pessoa+"");
-            List<Produto> produtos = this.produtos;
-            foreach(Produto pr in produtos){
-                MessageBox.Show(pr.Codigo_produto_+"");
-                ip.insertCompra(pr,ip);
+            try
+            {
+                Item_Pedido ip = new Item_Pedido();
+                //ip.qantidade = carrinho.RowCount;
+                if (quantidade.Text != "")
+                {
+                    ip.qantidade = int.Parse(quantidade.Text);
+                }
+                else
+                {
+                    ip.qantidade = 1;
+                }
+                Pessoa p = new Pessoa();
+                p.mail = nome_usuario.Text;
+                ip.Codigo_pessoa = ip.idPessoa(p);
+                //MessageBox.Show(ip.Codigo_pessoa+"");
+                List<Produto> produtos = this.produtos;
+                foreach (Produto pr in produtos)
+                {
+                    //MessageBox.Show(pr.Codigo_produto_ + "");
+                    ip.insertCompra(pr, ip);
+                }
+                MessageBox.Show("Compra Efetuada");
+            }catch(Exception ex){
+                MessageBox.Show(ex.Message);
             }
         }
 

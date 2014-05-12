@@ -18,6 +18,8 @@ namespace Frigorifico.Classes
             set { codigo_pessoa = value; }
         }
 
+        public char status;
+
         public Produto Produto
         {
             get
@@ -29,12 +31,12 @@ namespace Frigorifico.Classes
             }
         }
 
-        public void insert(Produto p, Item_Pedido ip)
+        public void insertPedido(Produto p, Item_Pedido ip)
         {
             Banco b = new Banco();
             SqlConnection connection = b.con2();
-            String sql = "insert into itenspedidos (quantidade, valor_unitario, id_produto, codigo_pessoa) values ";
-            sql += "(" + ip.qantidade + ", " + p.preco + ", " + p.Codigo_produto_ + ", "+ip.codigo_pessoa+")";
+            String sql = "insert into itenspedidos (quantidade, valor_unitario, id_produto, codigo_pessoa, statos, data) values ";
+            sql += "(" + ip.qantidade + ", " + p.preco + ", " + p.Codigo_produto_ + ", "+ip.codigo_pessoa+",'S', getdate())";
             SqlCommand command = new SqlCommand(sql, connection);
             connection.Open();
             command.ExecuteNonQuery();
