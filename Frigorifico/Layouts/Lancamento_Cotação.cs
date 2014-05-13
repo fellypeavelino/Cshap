@@ -93,7 +93,7 @@ namespace Frigorifico.Layouts
             if (podeescrever())
             {
 
-                byte[] sendbyte = Encoding.ASCII.GetBytes(mensagem);
+                byte[] sendbyte = Encoding.UTF8.GetBytes(mensagem);
                 networkstream.Write(sendbyte, 0, sendbyte.Length);
             }
 
@@ -182,7 +182,7 @@ namespace Frigorifico.Layouts
                         byte[] bytes = new byte[tcpclient.ReceiveBufferSize];
                         networkstream.Read(bytes, 0, Convert.ToInt32(tcpclient.ReceiveBufferSize));
 
-                        String clientedata = Encoding.ASCII.GetString(bytes);
+                        String clientedata = Encoding.UTF8.GetString(bytes);
                         if (clientedata.Replace("\0", "").Trim() != "")
                         {
                             getMsg(clientedata);
@@ -243,15 +243,17 @@ namespace Frigorifico.Layouts
             Produto produto = new Produto();
             produto.Codigo_produto_ = int.Parse(gridProdutos.CurrentRow.Cells[0].Value.ToString());
             produto.nome_produto = gridProdutos.CurrentRow.Cells[1].Value.ToString();
+            produto.peso = float.Parse(gridProdutos.CurrentRow.Cells[2].Value.ToString());
             produto.preco = double.Parse(gridProdutos.CurrentRow.Cells[3].Value.ToString());
             String literal;
-            literal = "-"+produto.Codigo_produto_ + "/" + produto.nome_produto + "/" + produto.preco;
+            literal = "-"+produto.Codigo_produto_ + "/" + produto.nome_produto + "/"+produto.peso+"/"+ produto.preco;
             rtEnviar.Text += "\n"+literal;
 
             produtoselecionado.ColumnCount = 4;
             produtoselecionado.Rows.Add(
                     produto.Codigo_produto_,
                     produto.nome_produto,
+                    produto.peso,
                     produto.preco
                 );
             

@@ -32,7 +32,8 @@ namespace Web_Cliente.Layout
                 tcpclient.Connect("127.0.0.1", 8000);
             }
             catch (Exception ex) {
-                MessageBox.Show("Servidor não conectado");            
+                MessageBox.Show("Servidor não conectado");
+                this.Dispose();
             }
         }
 
@@ -53,7 +54,7 @@ namespace Web_Cliente.Layout
         {
             if (networkstream.CanWrite)
             {
-                byte[] sendbytes = Encoding.ASCII.GetBytes(mensagem);
+                byte[] sendbytes = Encoding.UTF8.GetBytes(mensagem);
                 networkstream.Write(sendbytes, 0, sendbytes.Length);
             }
         }
@@ -67,7 +68,7 @@ namespace Web_Cliente.Layout
             }
             else
             {
-                rtbconversa.Text = "servidor: " + mensagem + "\n";
+                rtbconversa.Text = "servidor: "; //+ mensagem + "\n";
             }
         }
 
@@ -83,7 +84,7 @@ namespace Web_Cliente.Layout
             {
                 String[] array = mensagem.Split('-');
                 //MessageBox.Show(array.Length+"");
-                rtbconversa.Text = "Servidor: " + mensagem + "\n";
+                //rtbconversa.Text = "Servidor: " + mensagem + "\n";
                 String[] filtro1;
                 Produto produtos = new Produto();
                 lProdutoServidor.ColumnCount = 4;
@@ -92,10 +93,12 @@ namespace Web_Cliente.Layout
                     filtro1 = array[i].Split('/');
                     produtos.Codigo_produto_ = int.Parse(filtro1[0]);
                     produtos.nome_produto = filtro1[1];
-                    produtos.preco = float.Parse(filtro1[2]);
+                    produtos.peso = float.Parse(filtro1[2]);
+                    produtos.preco = float.Parse(filtro1[3]);
                     lProdutoServidor.Rows.Add(
                         produtos.Codigo_produto_,
                         produtos.nome_produto,
+                        produtos.peso,
                         produtos.preco
                     );
                 }
@@ -139,7 +142,7 @@ namespace Web_Cliente.Layout
                     {
                         byte[] bytes = new byte[tcpclient.ReceiveBufferSize];
                         networkstream.Read(bytes, 0, Convert.ToInt32(tcpclient.ReceiveBufferSize));
-                        String returnData = Encoding.ASCII.GetString(bytes);
+                        String returnData = Encoding.UTF8.GetString(bytes);
                         getMsg(returnData);
                     }
                     else
