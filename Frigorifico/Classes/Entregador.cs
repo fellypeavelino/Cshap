@@ -9,6 +9,8 @@ namespace Frigorifico.Classes
     {
         private int matricula;
         public char habilitacao;
+        public String Nome;
+        public String tipoHabiliatacao;
 
         public Veiculo Veiculo
         {

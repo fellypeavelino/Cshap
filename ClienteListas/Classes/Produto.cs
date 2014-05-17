@@ -19,27 +19,27 @@ namespace Frigorifico.Classes
         public float peso;
         public String nome_produto;
 
-        public Solicitacao Solicitacao
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        //public Solicitacao Solicitacao
+        //{
+            //get
+            //{
+               // throw new System.NotImplementedException();
+            //}
+           // set
+            //{
+            //}
+        //}
 
-        public Estque Estque
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        //public Estque Estque
+        //{
+            //get
+            //{
+                //throw new System.NotImplementedException();
+            //}
+            //set
+            //{
+            //}
+        //}
 
         public void insert(Produto p) {
             Banco b = new Banco();

@@ -52,6 +52,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -86,6 +88,12 @@
     </Compile>
     <Compile Include="Layouts\Cadastro_Animal.Designer.cs">
       <DependentUpon>Cadastro_Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Cadastro_Entregador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layouts\Cadastro_Entregador.Designer.cs">
+      <DependentUpon>Cadastro_Entregador.cs</DependentUpon>
     </Compile>
     <Compile Include="Layouts\Cadastro_Fornecedor.cs">
       <SubType>Form</SubType>
@@ -126,16 +134,30 @@
     <Compile Include="Layouts\Program.cs" />
     <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="Classes\Produto.cs" />
+    <Compile Include="Layouts\Solicitacoa_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layouts\Solicitacoa_Clientes.Designer.cs">
+      <DependentUpon>Solicitacoa_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Poduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Solicitacao.cs" />
     <Compile Include="Classes\Tipo.cs" />
     <Compile Include="Classes\Veiculo.cs" />
+    <Compile Include="Web References\webservice2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastro_Poduto.resx">
       <DependentUpon>Cadastro_Poduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Cadastro_Animal.resx">
       <DependentUpon>Cadastro_Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Cadastro_Entregador.resx">
+      <DependentUpon>Cadastro_Entregador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Cadastro_Fornecedor.resx">
       <DependentUpon>Cadastro_Fornecedor.cs</DependentUpon>
@@ -155,6 +177,9 @@
     <EmbeddedResource Include="Layouts\Lancamento_Cotação.resx">
       <DependentUpon>Lancamento_Cotação.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Solicitacoa_Clientes.resx">
+      <DependentUpon>Solicitacoa_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -164,6 +189,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Classes\ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,8 +200,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\webservice2\Item_Pedido.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\webservice2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\webservice2\WebServiceFrigorifico.wsdl" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:52096/WebServiceFrigorifico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\webservice2\</RelPath>
+      <UpdateFromURL>http://localhost:52096/WebServiceFrigorifico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Frigorifico_webservice2_WebService1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\webservice2\WebServiceFrigorifico.disco" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

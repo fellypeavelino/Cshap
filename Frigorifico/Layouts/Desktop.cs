@@ -62,5 +62,11 @@ namespace Frigorifico.Layouts
             Lancamento_Cotação lc = new Lancamento_Cotação();
             lc.Show();
         }
+
+        private void solicitaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Solicitacoa_Clientes sc = new Solicitacoa_Clientes();
+            sc.Show();
+        }
     }
 }

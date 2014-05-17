@@ -8,9 +8,11 @@ namespace Frigorifico.Classes
 {
     public class Item_Pedido
     {
+        public int codigo;
         public int qantidade;
         public double valor_unitario;
-
+        String data;
+        String Status;
         public Produto Produto
         {
             get
@@ -21,6 +23,9 @@ namespace Frigorifico.Classes
             {
             }
         }
+
+        public Fisica fisica;
+        public Juridica juridica;
 
         public void insertPedidos(Produto p, Item_Pedido ip, Pessoa pe) {
             Banco b = new Banco();

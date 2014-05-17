@@ -23,7 +23,7 @@
   <Class Name="Frigorifico.Properties.Settings" Collapsed="true">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="Frigorifico.Classes.Pessoa">
@@ -113,7 +113,7 @@
   <Class Name="Frigorifico.Classes.Item_Pedido">
     <Position X="10.5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAE=</HashCode>
+      <HashCode>IAABAAAMAEAAAAAAAEAAAAAAAAAAAAAAAAAQAABAAAE=</HashCode>
       <FileName>Classes\Item_Pedido.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -132,9 +132,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Frigorifico.Classes.Entrega">
-    <Position X="11.25" Y="7" Width="1.5" />
+    <Position X="11.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAABAAAAAAAAAgAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAAFAAAAAAAAAgAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Entrega.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -148,7 +148,7 @@
   <Class Name="Frigorifico.Classes.Entregador">
     <Position X="2.75" Y="11" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <HashCode>AAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEEAAAA=</HashCode>
       <FileName>Classes\Entregador.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

@@ -54,3 +54,6 @@ C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\De
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.csproj.GenerateResource.Cache
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Cadastro_Poduto.resources
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Lancamento_Cotação.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Solicitacoa_Clientes.resources
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\bin\Debug\Frigorifico.exe.config
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\Frigorifico\obj\x86\Debug\Frigorifico.Layouts.Cadastro_Entregador.resources
