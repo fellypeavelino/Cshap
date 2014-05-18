@@ -15,8 +15,8 @@ namespace Frigorifico.Classes
             set { codigo_entrega = value; }
         }
         public String nome;
-        public DateTime data_entrega;
-        public DateTime horario_entrega;
+        public String data_entrega;
+        public String horario_entrega;
 
     }
 }

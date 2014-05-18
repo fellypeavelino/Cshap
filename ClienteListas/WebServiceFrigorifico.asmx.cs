@@ -75,7 +75,7 @@ namespace ClienteListas
             Banco banco = new Banco();
             SqlConnection connection = banco.con2();
             String sql = "insert into entregas (cliente, data, horario, id_item) ";
-            sql += "values ('" + ent.nome + "', '"+ ent.data_entrega +"', '"+ent.horario_entrega+"', "+ent.item_pedido+");";
+            sql += "values ('" + ent.nome + "', '"+ ent.data_entrega +"', '"+ent.horario_entrega+"', "+ent.item_pedido.codigo+");";
             SqlCommand command = new SqlCommand(sql, connection);
             connection.Open();
             command.ExecuteNonQuery();

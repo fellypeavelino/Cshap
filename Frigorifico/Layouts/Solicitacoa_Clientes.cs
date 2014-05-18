@@ -49,11 +49,39 @@ namespace Frigorifico.Layouts
             }
         }
 
+        int idItem;
         private void gridSolicita_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Entrega entrega = new Entrega();
-            nomeCliente.Text = gridSolicita.CurrentRow.Cells[1].Value.ToString();
-            entrega.Codigo_entrega = int.Parse(gridSolicita.CurrentRow.Cells[8].Value.ToString());
+            try
+            {
+                Frigorifico.Classes.Entrega entrega = new Frigorifico.Classes.Entrega();
+                nomeCliente.Text = gridSolicita.CurrentRow.Cells[1].Value.ToString();
+                this.idItem = int.Parse(gridSolicita.CurrentRow.Cells[8].Value.ToString());
+            }catch(Exception ex){
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                WebService1 clientelista = new WebService1();
+                Frigorifico.webservice2.Entrega entrega = new Frigorifico.webservice2.Entrega();
+                Frigorifico.webservice2.Item_Pedido ip = new webservice2.Item_Pedido();
+                entrega.nome = nomeCliente.Text;
+                clientelista.updateStatu(idItem);
+                entrega.data_entrega = hora.Text + ":" + minuto.Text;
+                entrega.data_entrega = data.Text;
+                ip.codigo = idItem;
+                entrega.item_pedido = ip;
+                clientelista.insertEntrega(entrega);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

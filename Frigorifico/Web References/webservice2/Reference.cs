@@ -424,9 +424,9 @@ namespace Frigorifico.webservice2 {
         
         private string nomeField;
         
-        private System.DateTime data_entregaField;
+        private string data_entregaField;
         
-        private System.DateTime horario_entregaField;
+        private string horario_entregaField;
         
         private Item_Pedido item_pedidoField;
         
@@ -443,7 +443,7 @@ namespace Frigorifico.webservice2 {
         }
         
         /// <remarks/>
-        public System.DateTime data_entrega {
+        public string data_entrega {
             get {
                 return this.data_entregaField;
             }
@@ -453,7 +453,7 @@ namespace Frigorifico.webservice2 {
         }
         
         /// <remarks/>
-        public System.DateTime horario_entrega {
+        public string horario_entrega {
             get {
                 return this.horario_entregaField;
             }

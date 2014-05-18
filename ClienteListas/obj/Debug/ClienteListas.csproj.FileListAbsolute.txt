@@ -2,3 +2,4 @@ C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteListas\bin\Clie
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteListas\bin\ClienteListas.pdb
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteListas\obj\Debug\ClienteListas.dll
 C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteListas\obj\Debug\ClienteListas.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteListas\obj\Debug\ClienteListas.csprojResolveAssemblyReference.cache
