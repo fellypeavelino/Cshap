@@ -71,12 +71,12 @@ namespace Frigorifico.Layouts
                 Frigorifico.webservice2.Item_Pedido ip = new webservice2.Item_Pedido();
                 entrega.nome = nomeCliente.Text;
                 clientelista.updateStatu(idItem);
-                entrega.data_entrega = hora.Text + ":" + minuto.Text;
+                entrega.horario_entrega = hora.Text + ":" + minuto.Text;
                 entrega.data_entrega = data.Text;
                 ip.codigo = idItem;
                 entrega.item_pedido = ip;
                 clientelista.insertEntrega(entrega);
-
+                this.carregagrid(gridSolicita);
             }
             catch (Exception ex)
             {

@@ -20,6 +20,24 @@ namespace Web_Cliente.Layout
                 InitializeComponent();
                 usuario.Text = frm1.login;
                 this.carregagrid(gridProdutos);
+                Web_Cliente.webservice3.WebServiceRespostas wsr = new Web_Cliente.webservice3.WebServiceRespostas();
+                Web_Cliente.webservice3.Item_Pedido[] ips = wsr.solicitacaoListaRespostaFisica(usuario.Text);
+                gridResposta.Rows.Clear();
+                gridResposta.ColumnCount = 8;
+                foreach( Web_Cliente.webservice3.Item_Pedido ip in ips){
+                    double total = (ip.valor_unitario * ip.qantidade);
+                    gridResposta.Rows.Add(
+                        ip.codigo,
+                        //ip.fisca.nome,
+                        ip.Produto.nome,
+                        ip.Produto.Codigo_produto_,
+                        ip.valor_unitario,
+                        ip.qantidade,
+                        total,
+                        ip.status,
+                        ip.data
+                    );
+                }
             }
             catch (Exception ex) 
             {

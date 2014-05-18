@@ -5,5 +5,8 @@
     <Setting Name="Web_Cliente_servidor_WebServiceFrigorifico" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://localhost:52803/WebServiceFrigorifico.asmx</Value>
     </Setting>
+    <Setting Name="Web_Cliente_webservice3_WebServiceRespostas" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:50647/WebServiceRespostas.asmx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

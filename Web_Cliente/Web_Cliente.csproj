@@ -124,6 +124,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\webservice3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Layout\Cadastro_Compra.resx">
       <DependentUpon>Cadastro_Compra.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +177,14 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\servidor\WebServiceFrigorifico.wsdl" />
+    <None Include="Web References\webservice3\Item_Pedido.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\webservice3\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\webservice3\WebServiceRespostas.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -180,6 +193,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:50647/WebServiceRespostas.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\webservice3\</RelPath>
+      <UpdateFromURL>http://localhost:50647/WebServiceRespostas.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Web_Cliente_webservice3_WebServiceRespostas</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost:52803/WebServiceFrigorifico.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\servidor\</RelPath>
@@ -195,7 +219,9 @@
   <ItemGroup>
     <None Include="Web References\servidor\WebServiceFrigorifico.disco" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Web References\webservice3\WebServiceRespostas.disco" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

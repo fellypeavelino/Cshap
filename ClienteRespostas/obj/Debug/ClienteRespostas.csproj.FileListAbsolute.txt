@@ -1,0 +1,4 @@
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteRespostas\bin\ClienteRespostas.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteRespostas\bin\ClienteRespostas.pdb
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteRespostas\obj\Debug\ClienteRespostas.dll
+C:\Users\mria do carmo\Documents\felipe\biblioteca_classe\ClienteRespostas\obj\Debug\ClienteRespostas.pdb
