@@ -34,9 +34,9 @@
             this.pessoaFisicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoaJuridicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.entregadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lançamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cotaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +48,6 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.entregadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +70,6 @@
             this.cadastrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
             this.fornecedorToolStripMenuItem,
-            this.funcionarioToolStripMenuItem,
             this.animalToolStripMenuItem,
             this.produtosToolStripMenuItem,
             this.entregadorToolStripMenuItem});
@@ -109,12 +107,6 @@
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
-            // funcionarioToolStripMenuItem
-            // 
-            this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.funcionarioToolStripMenuItem.Text = "Funcionario";
-            // 
             // animalToolStripMenuItem
             // 
             this.animalToolStripMenuItem.Name = "animalToolStripMenuItem";
@@ -129,6 +121,12 @@
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
+            // entregadorToolStripMenuItem
+            // 
+            this.entregadorToolStripMenuItem.Name = "entregadorToolStripMenuItem";
+            this.entregadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.entregadorToolStripMenuItem.Text = "Entregador";
+            // 
             // lançamentoToolStripMenuItem
             // 
             this.lançamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -141,14 +139,14 @@
             // solicitaçãoToolStripMenuItem
             // 
             this.solicitaçãoToolStripMenuItem.Name = "solicitaçãoToolStripMenuItem";
-            this.solicitaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.solicitaçãoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.solicitaçãoToolStripMenuItem.Text = "Solicitação";
             this.solicitaçãoToolStripMenuItem.Click += new System.EventHandler(this.solicitaçãoToolStripMenuItem_Click);
             // 
             // cotaçãoToolStripMenuItem
             // 
             this.cotaçãoToolStripMenuItem.Name = "cotaçãoToolStripMenuItem";
-            this.cotaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cotaçãoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.cotaçãoToolStripMenuItem.Text = "Cotação";
             this.cotaçãoToolStripMenuItem.Click += new System.EventHandler(this.cotaçãoToolStripMenuItem_Click);
             // 
@@ -208,12 +206,6 @@
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // entregadorToolStripMenuItem
-            // 
-            this.entregadorToolStripMenuItem.Name = "entregadorToolStripMenuItem";
-            this.entregadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.entregadorToolStripMenuItem.Text = "Entregador";
-            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,7 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem pessoaFisicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoaJuridicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fornecedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lançamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solicitaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cotaçãoToolStripMenuItem;

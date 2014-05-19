@@ -35,6 +35,8 @@ namespace Web_Cliente.webservice3 {
         
         private System.Threading.SendOrPostCallback solicitacaoListaRespostaFisicaOperationCompleted;
         
+        private System.Threading.SendOrPostCallback idPessoaFisicaOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -78,6 +80,9 @@ namespace Web_Cliente.webservice3 {
         
         /// <remarks/>
         public event solicitacaoListaRespostaFisicaCompletedEventHandler solicitacaoListaRespostaFisicaCompleted;
+        
+        /// <remarks/>
+        public event idPessoaFisicaCompletedEventHandler idPessoaFisicaCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/HelloWorld", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -132,6 +137,35 @@ namespace Web_Cliente.webservice3 {
             if ((this.solicitacaoListaRespostaFisicaCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.solicitacaoListaRespostaFisicaCompleted(this, new solicitacaoListaRespostaFisicaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/idPessoaFisica", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int idPessoaFisica(string email) {
+            object[] results = this.Invoke("idPessoaFisica", new object[] {
+                        email});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void idPessoaFisicaAsync(string email) {
+            this.idPessoaFisicaAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void idPessoaFisicaAsync(string email, object userState) {
+            if ((this.idPessoaFisicaOperationCompleted == null)) {
+                this.idPessoaFisicaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnidPessoaFisicaOperationCompleted);
+            }
+            this.InvokeAsync("idPessoaFisica", new object[] {
+                        email}, this.idPessoaFisicaOperationCompleted, userState);
+        }
+        
+        private void OnidPessoaFisicaOperationCompleted(object arg) {
+            if ((this.idPessoaFisicaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.idPessoaFisicaCompleted(this, new idPessoaFisicaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -667,6 +701,32 @@ namespace Web_Cliente.webservice3 {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((Item_Pedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    public delegate void idPessoaFisicaCompletedEventHandler(object sender, idPessoaFisicaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class idPessoaFisicaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal idPessoaFisicaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
             }
         }
     }

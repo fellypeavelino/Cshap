@@ -63,6 +63,7 @@ namespace ClienteRespostas
             return ips;
         }
 
+        [WebMethod]
         public int idPessoaFisica(String email) { 
             int id = 0;
             Banco banco = new Banco();

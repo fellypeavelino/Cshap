@@ -101,6 +101,20 @@
           </s:extension>
         </s:complexContent>
       </s:complexType>
+      <s:element name="idPessoaFisica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="idPessoaFisicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idPessoaFisicaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -115,6 +129,12 @@
   <wsdl:message name="solicitacaoListaRespostaFisicaSoapOut">
     <wsdl:part name="parameters" element="tns:solicitacaoListaRespostaFisicaResponse" />
   </wsdl:message>
+  <wsdl:message name="idPessoaFisicaSoapIn">
+    <wsdl:part name="parameters" element="tns:idPessoaFisica" />
+  </wsdl:message>
+  <wsdl:message name="idPessoaFisicaSoapOut">
+    <wsdl:part name="parameters" element="tns:idPessoaFisicaResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebServiceRespostasSoap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -123,6 +143,10 @@
     <wsdl:operation name="solicitacaoListaRespostaFisica">
       <wsdl:input message="tns:solicitacaoListaRespostaFisicaSoapIn" />
       <wsdl:output message="tns:solicitacaoListaRespostaFisicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="idPessoaFisica">
+      <wsdl:input message="tns:idPessoaFisicaSoapIn" />
+      <wsdl:output message="tns:idPessoaFisicaSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebServiceRespostasSoap" type="tns:WebServiceRespostasSoap">
@@ -145,6 +169,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="idPessoaFisica">
+      <soap:operation soapAction="http://tempuri.org/idPessoaFisica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebServiceRespostasSoap12" type="tns:WebServiceRespostasSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -159,6 +192,15 @@
     </wsdl:operation>
     <wsdl:operation name="solicitacaoListaRespostaFisica">
       <soap12:operation soapAction="http://tempuri.org/solicitacaoListaRespostaFisica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="idPessoaFisica">
+      <soap12:operation soapAction="http://tempuri.org/idPessoaFisica" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

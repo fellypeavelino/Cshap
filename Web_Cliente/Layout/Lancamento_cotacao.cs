@@ -17,10 +17,20 @@ namespace Web_Cliente.Layout
         TcpClient tcpclient;
         NetworkStream networkstream;
         Thread thInteraction;
-
-        public Lancamento_cotacao()
+        String email;
+        int idUsuario;
+        public Lancamento_cotacao(Form1 frm1)
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+                this.email = frm1.login;
+                Web_Cliente.webservice3.WebServiceRespostas wsr = new Web_Cliente.webservice3.WebServiceRespostas();
+                this.idUsuario = wsr.idPessoaFisica(this.email);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }    
         }
 
         private void connect()
@@ -105,32 +115,10 @@ namespace Web_Cliente.Layout
             }
         }
 
-        private void rtbmensagem_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (networkstream.CanWrite)
-                {
-                    String mensagem = rtbmensagem.Text;
-                    enviarMsg(mensagem);
-                    setMsg("eu: " + mensagem);
-                }
-                else
-                {
-                    setMsg("não é possivel enviar mensagem");
-                    desconnect();
-                }
-            }
-        }
-
-        private void rtbmensagem_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                //rtbmensagem.Clear();
-            }
-        }
-
+        /// <summary>
+        /// em memoria
+        /// 
+        /// </summary>
         private void interaction()
         {
             try
@@ -168,6 +156,49 @@ namespace Web_Cliente.Layout
         private void Lancamento_cotacao_FormClosing(object sender, FormClosingEventArgs e)
         {
             desconnect();
+        }
+
+        List<Produto> Produtos = new List<Produto>();
+        private void lProdutoServidor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Produto produto = new Produto();
+            produto.Codigo_produto_ = int.Parse(lProdutoServidor.CurrentRow.Cells[0].Value.ToString());
+            produto.nome_produto = lProdutoServidor.CurrentRow.Cells[1].Value.ToString();
+            produto.preco = float.Parse( lProdutoServidor.CurrentRow.Cells[3].Value.ToString());
+            gridCompra.Rows.Clear();
+            gridCompra.ColumnCount = 2;
+            gridCompra.Rows.Add(
+                produto.Codigo_produto_,
+                produto.nome_produto
+            );
+            this.Produtos.Add(produto);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Frigorifico.Classes.Item_Pedido ip = new Frigorifico.Classes.Item_Pedido();
+                if (quantidade.Text != "")
+                {
+                    ip.qantidade = int.Parse(quantidade.Text);
+                }
+                else
+                {
+                    ip.qantidade = 1;
+                }
+                ip.Codigo_pessoa = idUsuario;
+                foreach (Produto produto in Produtos)
+                {
+                    enviarMsg("Cliente escolheu " + produto.nome_produto + " de Codigo " + produto.Codigo_produto_ + " \n");
+                    ip.insertCompra(produto, ip);//possivel erro
+                }
+                
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
     }

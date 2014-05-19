@@ -10,16 +10,16 @@ namespace Frigorifico.Classes
         private int codigo_compra;
         public Cliente c;
         public double valor_total;
-
-        public Item_Pedido Item_Pedido
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public Item_Pedido Item_Pedido;
+        //public Item_Pedido Item_Pedido
+        //{
+            //get
+            //{
+                //throw new System.NotImplementedException();
+            //}
+            //set
+            //{
+            //}
+        //}
     }
 }

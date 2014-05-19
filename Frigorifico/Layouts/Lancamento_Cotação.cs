@@ -148,6 +148,7 @@ namespace Frigorifico.Layouts
             {
                 if (podeescrever() == true)
                 {
+                    rtbMensagem.Clear();
                     rtbMensagem.Text += "cliente " + text + "\n";
                 }
             }

@@ -69,7 +69,7 @@ namespace Web_Cliente.Layout
 
         private void cotaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Lancamento_cotacao lc = new Lancamento_cotacao();
+            Lancamento_cotacao lc = new Lancamento_cotacao(this);
             lc.Show();
         }
 
