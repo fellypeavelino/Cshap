@@ -191,7 +191,7 @@ namespace Web_Cliente.Layout
                 foreach (Produto produto in Produtos)
                 {
                     enviarMsg("Cliente escolheu " + produto.nome_produto + " de Codigo " + produto.Codigo_produto_ + " \n");
-                    ip.insertCompra(produto, ip);//possivel erro
+                    ip.insertCompra(produto, ip);//possivel erroe
                 }
                 
 
